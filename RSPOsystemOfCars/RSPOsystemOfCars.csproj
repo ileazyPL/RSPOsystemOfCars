@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C56074EC-AA32-4F7E-9D2F-B45342B0F06D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RSPOsystemOfCars</RootNamespace>
+    <AssemblyName>RSPOsystemOfCars</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addname.Designer.cs">
+      <DependentUpon>Addname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReg.Designer.cs">
+      <DependentUpon>AddReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Color.Designer.cs">
+      <DependentUpon>Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formamarkics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formamarkics.Designer.cs">
+      <DependentUpon>formamarkics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="O_programme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="O_programme.Designer.cs">
+      <DependentUpon>O_programme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="priloshenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="priloshenie.Designer.cs">
+      <DependentUpon>priloshenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Region.Designer.cs">
+      <DependentUpon>Region.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSPOusersDataSet.cs">
+      <DependentUpon>RSPOusersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RSPOusersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSPOusersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RSPOusersDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSPOusersDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RSPOusersDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSPOusersDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RSPOusersDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSPOusersDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdReg.Designer.cs">
+      <DependentUpon>UpdReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Addname.resx">
+      <DependentUpon>Addname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReg.resx">
+      <DependentUpon>AddReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Color.resx">
+      <DependentUpon>Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formamarkics.resx">
+      <DependentUpon>formamarkics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="O_programme.resx">
+      <DependentUpon>O_programme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="priloshenie.resx">
+      <DependentUpon>priloshenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Region.resx">
+      <DependentUpon>Region.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdReg.resx">
+      <DependentUpon>UpdReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RSPOusersDataSet.xsc">
+      <DependentUpon>RSPOusersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RSPOusersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RSPOusersDataSet.xss">
+      <DependentUpon>RSPOusersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet1.xsc">
+      <DependentUpon>RSPOusersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RSPOusersDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RSPOusersDataSet1.xss">
+      <DependentUpon>RSPOusersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet2.xsc">
+      <DependentUpon>RSPOusersDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RSPOusersDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RSPOusersDataSet2.xss">
+      <DependentUpon>RSPOusersDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet3.xsc">
+      <DependentUpon>RSPOusersDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RSPOusersDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RSPOusersDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RSPOusersDataSet3.xss">
+      <DependentUpon>RSPOusersDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
